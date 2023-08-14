@@ -2,13 +2,13 @@ import React from "react";
 import Toggle from "./Toggle";
 import { LayoutGroup, motion } from "framer-motion";
 import { UseScroll } from "../UseScroll";
-import { faqScrollAnime } from "../animation";
+import { fade } from "../animation";
 
 const FaqSection = () => {
   const [element, controls] = UseScroll();
   return (
     <motion.div
-      variants={faqScrollAnime}
+      variants={fade}
       ref={element}
       animate={controls}
       initial="hidden"

@@ -21,6 +21,7 @@ export const pageAnimation = {
 
     transition: {
       duration: 0.6,
+      ease: "easeOut",
     },
   },
 };
@@ -162,5 +163,3 @@ export const contactUsAnime = {
     },
   },
 };
-
-
