@@ -1,13 +1,23 @@
-import React from "react";
 import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
+import { motion } from "framer-motion";
+import { UseScroll } from "../UseScroll";
+import { scrollAnime } from "../animation";
 
 const ServiceSection = () => {
+  const [element, controls] = UseScroll();
+
   return (
-    <div className="service">
+    <motion.div
+      variants={scrollAnime}
+      ref={element}
+      animate={controls}
+      initial="hidden"
+      className="service"
+    >
       <div className="description">
         <h2>
           High <span>quailty</span> service
@@ -46,7 +56,7 @@ const ServiceSection = () => {
       <div className="image">
         <img src={home2} alt="" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
