@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <AnimatePresence mode="wait">
+      <AnimatePresence  mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route exact path="/" element={<AboutUs />}></Route>
           <Route exact path="/ourwork" element={<OurWork />}></Route>
