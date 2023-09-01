@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "homepage": "https://github.com/AxossO/Capture-Project",
-=======
-  "homepage": "http://AxossO.github.io/Capture-Project",
->>>>>>> a4580988449f64d838df17c41408e22175925af6
   "name": "capture",
   "version": "0.1.0",
   "private": true,
